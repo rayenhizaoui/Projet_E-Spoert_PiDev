@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="522.0" prefWidth="758.0" style="-fx-background-color: #05071F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allintravelfinal.controller.event.ChangeScenesController">
+   <children>
+      <Button fx:id="User_btn" mnemonicParsing="false" prefHeight="522.0" prefWidth="372.0" style="-fx-background-color: pINK;" text="LOG IN AS USER" />
+      <Button fx:id="admin_btn" layoutX="373.0" mnemonicParsing="false" prefHeight="522.0" prefWidth="384.0" style="-fx-background-color: vIOLET;" text="lOG iN AS ADMIN" />
+   </children>
+</AnchorPane>
