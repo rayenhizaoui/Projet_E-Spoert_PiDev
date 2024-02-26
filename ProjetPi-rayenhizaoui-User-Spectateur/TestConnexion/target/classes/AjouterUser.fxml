@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterUserController">
+   <left>
+      <AnchorPane prefHeight="650.0" prefWidth="359.0" style="-fx-background-color: #521073;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="158.0" prefHeight="20.0" prefWidth="33.0" text="CIN" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="208.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="258.0" text="Numero" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="308.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="358.0" text="Adresse" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="408.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="137.0" layoutY="52.0" prefHeight="37.0" prefWidth="166.0" text="INSCRIPTION" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="458.0" text="Role" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Label>
+            <Button layoutX="201.0" layoutY="547.0" mnemonicParsing="false" onAction="#AjouterUser" style="-fx-background-color: white;" text="Ajouter">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font></Button>
+            <TextField fx:id="txtusername" layoutX="140.0" layoutY="200.0" prefHeight="31.0" prefWidth="163.0" promptText="username" />
+            <TextField fx:id="txtnumero" layoutX="140.0" layoutY="250.0" prefHeight="31.0" prefWidth="164.0" promptText="numero" />
+            <TextField fx:id="txtemail" layoutX="140.0" layoutY="300.0" prefHeight="31.0" prefWidth="164.0" promptText="email" />
+            <TextField fx:id="txtadresse" layoutX="140.0" layoutY="350.0" prefHeight="31.0" prefWidth="164.0" promptText="adresse" />
+            <TextField fx:id="txtcin" layoutX="140.0" layoutY="150.0" prefHeight="35.0" prefWidth="162.0" promptText="cin" />
+            <PasswordField fx:id="txtpassword" layoutX="140.0" layoutY="400.0" prefHeight="31.0" prefWidth="165.0" promptText="Password" />
+            <ChoiceBox fx:id="choicerole" layoutX="140.0" layoutY="450.0" prefHeight="31.0" prefWidth="166.0" />
+            <ImageView fitHeight="93.0" fitWidth="95.0" layoutX="21.0" layoutY="24.0">
+               <image>
+                  <Image url="@415514555_1125145151979689_4353203956994981018_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #118098;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="640.0" layoutX="-1.0" layoutY="2.0">
+               <image>
+                  <Image url="@428152047_3571321516418445_3841792622187971321_n.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="233.0" layoutY="70.0" prefHeight="42.0" prefWidth="186.0" text="SE CONNECTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="115.0" layoutY="258.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="115.0" layoutY="317.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Button layoutX="252.0" layoutY="379.0" mnemonicParsing="false" onAction="#ConnecterUser" prefHeight="40.0" prefWidth="137.0" style="-fx-background-color: white;" text="Connecter">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font></Button>
+            <TextField fx:id="txtusername1" layoutX="222.0" layoutY="241.0" prefHeight="31.0" prefWidth="207.0" promptText="username" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="txtpassword1" layoutX="222.0" layoutY="300.0" prefHeight="31.0" prefWidth="209.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="74.0" layoutY="254.0">
+               <image>
+                  <Image url="@Admin-Profile-PNG-Clipart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="70.0" layoutY="307.0">
+               <image>
+                  <Image url="@6676583.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
