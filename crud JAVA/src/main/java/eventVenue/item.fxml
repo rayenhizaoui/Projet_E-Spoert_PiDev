@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ItemPane" prefHeight="328.0" prefWidth="351.0" style="-fx-background-radius: 50;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allintravelfinal.controller.event.UserUIEvent.ItemController">
+   <children>
+      <VBox fx:id="Vbox" alignment="TOP_CENTER" prefHeight="346.0" prefWidth="364.0" style="-fx-background-color: #42C2FF; -fx-background-radius: 15;" stylesheets="style.css">
+         <children>
+            <VBox>
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="364.0" stylesheets="@style.css">
+                     <children>
+                        <Label fx:id="nameLabel" prefHeight="49.0" prefWidth="137.0" text="Date">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="priceLable" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="187.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 20;" stylesheets="style.css" text="\$0.99">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="54.0" prefWidth="426.0" stylesheets="@style.css">
+                     <children>
+                        <Label fx:id="nameLabel3" prefHeight="49.0" prefWidth="137.0" text="Date">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="DateLab" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="190.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 20;" stylesheets="style.css" text="\$0.99">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <HBox fx:id="CategoryLabel" prefHeight="62.0" prefWidth="364.0" stylesheets="@style.css">
+                     <children>
+                        <Label fx:id="nameLabel1" prefHeight="49.0" prefWidth="137.0" text="Location">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="LocLab" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="191.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 20;" stylesheets="style.css" text="\$0.99">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="110.0" prefWidth="364.0">
+               <children>
+                  <HBox prefHeight="54.0" prefWidth="364.0" stylesheets="@style.css">
+                     <children>
+                        <Label fx:id="nameLabel2" prefHeight="49.0" prefWidth="137.0" text="Category">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="CategoryLab" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="191.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 20;" stylesheets="style.css" text="\$0.99">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="51.0" prefWidth="431.0" stylesheets="@style.css">
+                     <children>
+                        <Label fx:id="nameLabel21" prefHeight="49.0" prefWidth="137.0" text="description">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="description_tx" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="190.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 20;" stylesheets="style.css" text="\$0.99">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <HBox fx:id="CategoryLabel1" prefHeight="56.0" prefWidth="408.0" stylesheets="@style.css">
+                     <children>
+                        <Label fx:id="nameLabel11" prefHeight="49.0" prefWidth="137.0" text="Duration">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="Duration_lab" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="191.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 20;" stylesheets="style.css" text="\$0.99">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
