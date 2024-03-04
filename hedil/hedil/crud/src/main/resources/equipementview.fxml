@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="654.0" prefWidth="1086.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListequipementController">
+    <children>
+        <AnchorPane prefHeight="695.0" prefWidth="1368.0">
+            <children>
+            <ImageView fitHeight="756.0" fitWidth="1246.0" layoutX="-128.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Rr6fODRqDI9Qou6V8Pv1tGYB.jpg" />
+               </image>
+            </ImageView>
+                <Pane layoutY="101.0" prefHeight="2.0" prefWidth="1086.0" style="-fx-background-color: Black;" />
+                <TableView fx:id="events_table" layoutX="18.0" layoutY="114.0" onMouseClicked="#getUpdateView" prefHeight="365.0" prefWidth="639.0" style="-fx-background-color: #FFD1DV;" stylesheets="@Style_new.css">
+                    <columns>
+                        <TableColumn fx:id="id_col" minWidth="0.0" prefWidth="57.33332824707031" text="ID" />
+                        <TableColumn fx:id="nom_col" prefWidth="168.66665649414062" text="nom" />
+                        <TableColumn fx:id="nombre_col" prefWidth="136.33334350585938" text="nombre" />
+                  <TableColumn fx:id="image_col" prefWidth="136.33334350585938" text="Image" />
+                  <TableColumn fx:id="qrCodeColumn" prefWidth="136.33334350585938" text="QrCode" />
+                    </columns>
+                </TableView>
+                <Text fill="#d716da" layoutX="18.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Equipement" wrappingWidth="235.20339965820312">
+                    <font>
+                        <Font name="Garamond Italic" size="35.0" />
+                    </font>
+                </Text>
+                <HBox layoutX="541.0" layoutY="24.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="24.0" />
+                    </children>
+                </HBox>
+                <Button layoutX="14.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#getAddView" prefHeight="26.0" prefWidth="64.0" text="Add" />
+
+                <Button fx:id="showEvents" layoutX="83.0" layoutY="67.0" mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="26.0" prefWidth="64.0" text="Refresh" />
+                <Button fx:id="print_btn" layoutX="156.0" layoutY="67.0" mnemonicParsing="false" onMouseClicked="#pdf" prefHeight="26.0" prefWidth="64.0" text="print" />
+                <TextField fx:id="keywordTextFld" layoutX="389.0" layoutY="28.0" onKeyReleased="#searchEquipement" prefHeight="27.0" prefWidth="457.0" promptText="search" style="-fx-border-color: #B7C3D7; -fx-border-radius: 1em;" />
+            <ImageView fitHeight="88.0" fitWidth="83.0" layoutX="885.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@415514555_1125145151979689_4353203956994981018.png" />
+               </image>
+            </ImageView>
+                <Canvas fx:id="chartCanvas" height="268.0" layoutX="664.0" layoutY="413.0" width="445.0" />
+
+            </children>
+            <stylesheets>
+                <URL value="@Style_new.css" />
+                <URL value="@tableview.css" />
+            </stylesheets>
+        </AnchorPane>
+    </children>
+</HBox>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="774.0" prefWidth="973.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AfficherEquipement">
+   <children>
+      <ImageView fitHeight="798.0" fitWidth="1483.0" layoutX="-364.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Rr6fODRqDI9Qou6V8Pv1tGYB.jpg" />
+         </image>
+      </ImageView>
+    
+      <Label fx:id="emptyLabel" layoutX="789.0" layoutY="23.0" styleClass="label" text="Aucun equipement disponible" textAlignment="RIGHT" textFill="#f1ecf2">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <ScrollPane layoutX="14.0" layoutY="153.0" prefHeight="598.0" prefWidth="770.0" styleClass="scroll-pane">
+         <content>
+            <HBox fx:id="equipementTitlePane" prefHeight="664.0" prefWidth="1702.0" styleClass="hbox">
+               <children>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <Text fill="#e419e1" layoutX="306.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste des équipements disponible">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="127.0" fitWidth="188.0" layoutX="66.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@415514555_1125145151979689_4353203956994981018.png" />
+         </image>
+      </ImageView>
+    <Button layoutX="771.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#getAddView" text="Ajouter un équipement " />
+      <Button layoutX="771.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#getAddreserView" prefHeight="34.0" prefWidth="188.0" text="Ajouter reservation" />
+   </children>
+</AnchorPane>
