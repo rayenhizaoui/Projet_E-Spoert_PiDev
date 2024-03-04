@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterreservationController">
+    <children>
+      <ImageView fitHeight="562.0" fitWidth="776.0" layoutX="-19.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Rr6fODRqDI9Qou6V8Pv1tGYB.jpg" />
+         </image>
+      </ImageView>
+        <TextField fx:id="txtdeposit" layoutX="97.0" layoutY="227.0" promptText="deposit" />
+        <TextField fx:id="txttype" layoutX="354.0" layoutY="73.0" promptText="type" />
+        <TextField fx:id="txtnom" layoutX="83.0" layoutY="63.0" promptText="nom" />
+        <ComboBox fx:id="cbEquipement" layoutX="291.0" layoutY="227.0" prefHeight="25.0" prefWidth="174.0" promptText="equipement" />
+
+        <Label layoutX="37.0" layoutY="114.0" text="date debut reservation " textFill="#ec0bf8">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="297.0" layoutY="76.0" prefHeight="19.0" prefWidth="41.0" text="type" textFill="#f205ff">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="287.0" layoutY="124.0" text="date fin reservation" textFill="#d00dda">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Button layoutX="393.0" layoutY="330.0" mnemonicParsing="false" onAction="#ajouterReservation" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #8a0e90;" text="ajouter reservation" textFill="#ebe2e2" />
+
+      <Label layoutX="50.0" layoutY="66.0" text="nom" textFill="#c906d3">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Text fill="#d732d7" layoutX="188.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout Reservation" wrappingWidth="354.00244140625">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="txtdatedebutres" layoutX="35.0" layoutY="143.0" promptText="date debut reservation" />
+      <DatePicker fx:id="txtdatefinres" layoutX="287.0" layoutY="156.0" promptText="date fin reservation" />
+      <Label layoutX="37.0" layoutY="230.0" text="deposit" textFill="#f30bff">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="89.0" fitWidth="127.0" layoutX="615.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@415514555_1125145151979689_4353203956994981018.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="299.0" layoutY="200.0" text="equipement" textFill="#d00dda">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+    </children>
+
+
+</AnchorPane>

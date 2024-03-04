@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.updateequipementController">
+    <children>
+      <ImageView fitHeight="420.0" fitWidth="918.0" layoutX="-19.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Rr6fODRqDI9Qou6V8Pv1tGYB.jpg" />
+         </image>
+      </ImageView>
+
+        <TextField fx:id="txtnombre" layoutX="169.0" layoutY="171.0" promptText="nombre" />
+        <TextField fx:id="txtnom" layoutX="169.0" layoutY="108.0" promptText="nom" />
+
+
+        <Label layoutX="114.0" layoutY="112.0" text="nom" textFill="#d30bdd" />
+        <Label layoutX="104.0" layoutY="175.0" text=" nombre" textFill="#cd15d7" />
+
+        <Button layoutX="453.0" layoutY="332.0" mnemonicParsing="false" onAction="#updateequipement" style="-fx-background-color: #8a0e90;" text="update equipement" textFill="WHITE" />
+
+        <Button layoutX="495.0" layoutY="277.0" mnemonicParsing="false" onAction="#deleteequipement" style="-fx-background-color: #8a0e90;" text="supprimer" textFill="WHITE" />
+      <Text fill="#da16da" layoutX="495.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mise à jour Equipement" wrappingWidth="212.0546875">
+         <font>
+            <Font name="Arial Narrow" size="48.0" />
+         </font>
+      </Text>
+        <TextField fx:id="tfImagePath" editable="false" layoutX="169.0" layoutY="203.0" promptText="Image Path" />
+        <Button layoutX="340.0" layoutY="203.0" onAction="#handleUploadImage" style="-fx-background-color: #8a0e90;" text="Choose Image" />
+      <ImageView fitHeight="92.0" fitWidth="138.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@415514555_1125145151979689_4353203956994981018.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="104.0" layoutY="207.0" text="image" textFill="#cd15d7" />
+
+    </children>
+</AnchorPane>
