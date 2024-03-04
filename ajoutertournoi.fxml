@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane prefHeight="400.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjoutertournoiController">
+   <children>
+      <TextField fx:id="txtnbpar" layoutX="179.0" layoutY="159.0" promptText="nombre participant" />
+      <TextField fx:id="txtnomeq" layoutX="179.0" layoutY="107.0" promptText="nom d'equipe" />
+      <TextField fx:id="txtduree" layoutX="179.0" layoutY="219.0" promptText="duree de tournoi" />
+      <TextField fx:id="txttypej" layoutX="179.0" layoutY="271.0" promptText="type de jeiu" />
+      <TextField fx:id="txtfraisp" layoutX="179.0" layoutY="323.0" promptText="frais de participation" />
+      <TextField fx:id="txtnom" layoutX="179.0" layoutY="58.0" promptText="nom" />
+      <Label layoutX="39.0" layoutY="62.0" text="nom de tournois" />
+      <Label layoutX="43.0" layoutY="111.0" text="nom d'equipe" />
+      <Label layoutX="50.0" layoutY="163.0" text="nombre participant" />
+      <Label layoutX="50.0" layoutY="223.0" text="duree de tournoi" />
+      <Label layoutX="50.0" layoutY="275.0" text="type de jeu " />
+      <Label layoutX="50.0" layoutY="327.0" text="le prix" />
+      <Button layoutX="453.0" layoutY="332.0" mnemonicParsing="false" onAction="#ajouterTournoi" text="ajouter votre tournoi" />
+   </children>
+</BorderPane>

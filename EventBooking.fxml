@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="504.0" prefWidth="827.0" style="-fx-background-color: #E8E9EC;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookEventController">
+   <children>
+      <Pane layoutX="13.0" layoutY="14.0" prefHeight="478.0" prefWidth="363.0" style="-fx-background-color: #90e0ef; -fx-background-radius: 15;">
+         <children>
+            <Text layoutX="74.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVENT DETAILS" textAlignment="CENTER">
+               <font>
+                  <Font name="Goudy Old Style" size="26.0" />
+               </font>
+            </Text>
+            <VBox layoutX="10.0" layoutY="70.0" prefHeight="57.0" prefWidth="272.0">
+               <children>
+                  <VBox prefHeight="66.0" prefWidth="272.0">
+                     <children>
+                        <HBox prefHeight="54.0" prefWidth="272.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="94.0" text="Title:">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Title_lab" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="180.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 20;" textFill="#ece3e3">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="127.0" prefHeight="57.0" prefWidth="272.0">
+               <children>
+                  <VBox prefHeight="66.0" prefWidth="272.0">
+                     <children>
+                        <HBox prefHeight="54.0" prefWidth="272.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="94.0" text="Location">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Location_lab" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="171.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 20;" textFill="#ece3e3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="370.0" prefHeight="57.0" prefWidth="272.0">
+               <children>
+                  <VBox prefHeight="66.0" prefWidth="272.0">
+                     <children>
+                        <HBox prefHeight="54.0" prefWidth="272.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="94.0" text="CIN">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="46.0" prefWidth="217.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 20;">
+                                 <graphic>
+                                    <TextField fx:id="cin_tx" style="-fx-background-color: #00b4d8;" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="301.0" prefHeight="57.0" prefWidth="272.0">
+               <children>
+                  <VBox prefHeight="66.0" prefWidth="272.0">
+                     <children>
+                        <HBox prefHeight="54.0" prefWidth="272.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="94.0" text="Name">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="46.0" prefWidth="218.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 20;">
+                                 <graphic>
+                                    <TextField fx:id="name_tx" style="-fx-background-color: #00b4d8;" />
+                                 </graphic></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Text layoutX="64.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Information" textAlignment="CENTER" wrappingWidth="211.20000228881827">
+               <font>
+                  <Font name="Goudy Old Style" size="26.0" />
+               </font>
+            </Text>
+            <HBox layoutX="292.0" layoutY="109.0" prefHeight="34.0" prefWidth="0.0" />
+            <Button fx:id="payment" layoutX="116.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#getMapView" prefHeight="43.0" prefWidth="138.0" style="-fx-background-radius: 30; -fx-background-color: Pink;" text="Get In Maps">
+               <font>
+                  <Font name="Garamond" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="389.0" layoutY="14.0" prefHeight="384.0" prefWidth="423.0" style="-fx-background-color: #0077b6; -fx-background-radius: 15;">
+         <children>
+            <TextField layoutX="130.0" layoutY="14.0" prefHeight="46.0" prefWidth="179.0" style="-fx-background-color: #1280e7; -fx-background-radius: 40;" text="Fill &amp; Pay">
+               <font>
+                  <Font name="Garamond Italic" size="31.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="14.0" layoutY="85.0" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: #1280e7;" text="Total à Payer:">
+               <font>
+                  <Font name="Garamond" size="20.0" />
+               </font>
+            </TextField>
+            <Label fx:id="total_fld" alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" layoutY="86.0" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane layoutX="14.0" layoutY="13.0" prefHeight="116.0" prefWidth="363.0" style="-fx-background-color: null;" />
+            <TextField fx:id="NumCard_txt" layoutX="140.0" layoutY="181.0" prefHeight="25.0" prefWidth="232.0" />
+            <TextField fx:id="DateCard_txt" layoutX="140.0" layoutY="229.0" prefHeight="25.0" prefWidth="54.0" />
+            <TextField fx:id="Cvv_txt" layoutX="266.0" layoutY="229.0" prefHeight="25.0" prefWidth="66.0" />
+            <Label layoutX="14.0" layoutY="180.0" text="Numéro Carte">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="228.0" text="Date Expiration">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="228.0" text="CVV">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="payment1" layoutX="82.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#PaiementFrais" prefHeight="43.0" prefWidth="239.0" style="-fx-background-radius: 30; -fx-background-color: Pink;" text="Pay">
+               <font>
+                  <Font name="Garamond" size="20.0" />
+               </font>
+            </Button>
+            
+         </children>
+      </Pane>
+
+   </children>
+</AnchorPane>
