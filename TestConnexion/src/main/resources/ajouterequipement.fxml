@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterequipementController">
+    <children>
+      <ImageView fitHeight="569.0" fitWidth="809.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Rr6fODRqDI9Qou6V8Pv1tGYB.jpg" />
+         </image>
+      </ImageView>
+
+        <TextField fx:id="txtnombre" layoutX="169.0" layoutY="152.0" promptText="nombre" />
+        <TextField fx:id="txtnom" layoutX="161.0" layoutY="105.0" promptText="nom" />
+
+
+        <Label layoutX="114.0" layoutY="109.0" text="nom" textFill="#d908e4">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label layoutX="104.0" layoutY="156.0" text=" nombre" textFill="#f306ff">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <HBox spacing="10" />
+        <Button layoutX="453.0" layoutY="332.0" mnemonicParsing="false" onAction="#ajouterEquipement" style="-fx-background-color: #8a0e90;" text="ajouter equipement" textFill="#e8e2e2" />
+      <Text fill="#e112e4" layoutX="141.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENREGISTRER EQUIPEMENT  ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="101.0" fitWidth="121.0" layoutX="634.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@415514555_1125145151979689_4353203956994981018.png" />
+         </image>
+      </ImageView>
+         <TextField fx:id="tfImagePath" editable="false" layoutX="169.0" layoutY="203.0" promptText="Image Path" />
+         <Button layoutX="345.0" layoutY="204.0" onAction="#handleUploadImage" style="-fx-background-color: #8a0e90;" text="Choose Image" />
+      <Label layoutX="115.0" layoutY="206.0" prefHeight="20.0" prefWidth="47.0" text="image" textFill="#f306ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+
+
+    </children>
+</AnchorPane>

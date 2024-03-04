@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1310.0" stylesheets="Style_new.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TournoiHomeController">
+   <top>
+      <Pane prefHeight="0.0" prefWidth="1075.0" style="-fx-background-color: null;" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Pane prefHeight="775.0" prefWidth="290.0" style="-fx-background-color: null;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="-7.0" layoutY="14.0" prefHeight="188.0" prefWidth="304.0" style="-fx-background-color: null;" stylesheets="Style_new.css">
+               <children>
+                  <Button fx:id="EventMenu" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#eventMenu" prefHeight="63.0" prefWidth="168.0" stylesheets="Style_new.css" text="Tournoi" textAlignment="JUSTIFY" textFill="#9a159a" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Italic" size="29.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="VenueMenu" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#VenueMenu" prefHeight="42.0" prefWidth="171.0" stylesheets="Style_new.css" text="Local" textFill="#9a159a">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Italic" size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="208.0" fitWidth="208.0" layoutX="41.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="logo.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="WeatherMenu" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="12.0" layoutY="501.0" mnemonicParsing="false" onAction="#WeatherMenu" prefHeight="63.0" prefWidth="248.0" stylesheets="Style_new.css" text="METEO de jour" textAlignment="JUSTIFY" textFill="#9a159a" textOverrun="CENTER_WORD_ELLIPSIS">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="maps" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="1.0" layoutY="645.0" mnemonicParsing="false" onAction="#maps" prefHeight="61.0" prefWidth="276.0" stylesheets="Style_new.css" text="Notre localisation" textAlignment="JUSTIFY" textFill="#9a159a" textOverrun="CENTER_WORD_ELLIPSIS">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Italic" size="29.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="726.0" mnemonicParsing="false" onAction="#Admin" text="Admin" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <StackPane fx:id="ContentArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

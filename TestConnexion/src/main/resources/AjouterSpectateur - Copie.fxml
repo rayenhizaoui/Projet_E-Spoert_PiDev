@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #976fab;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterSpectateurController">
+   <children>
+      <Label layoutX="196.0" layoutY="44.0" text="Espace Spectateur">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="123.0" text="Nom">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="171.0" text="Prenom">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="222.0" text="Age">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtnoms" layoutX="160.0" layoutY="107.0" promptText="nom" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" />
+      <TextField fx:id="txtprenoms" layoutX="160.0" layoutY="155.0" promptText="prenom" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" />
+      <TextField fx:id="txtages" layoutX="160.0" layoutY="206.0" promptText="age" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" />
+      <Button layoutX="158.0" layoutY="282.0" mnemonicParsing="false" onAction="#ajouterSpectateur" style="-fx-background-color: white;" text="Ajouter" />
+      <Button layoutX="300.0" layoutY="282.0" mnemonicParsing="false" onAction="#afficherSpectateur" style="-fx-background-color: white;" text="Afficher" />
+   </children>
+</AnchorPane>

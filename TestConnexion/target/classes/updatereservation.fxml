@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdatereservationController">
+    <children>
+      <ImageView fitHeight="559.0" fitWidth="772.0" layoutX="-7.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Rr6fODRqDI9Qou6V8Pv1tGYB.jpg" />
+         </image>
+      </ImageView>
+        <TextField fx:id="txttype" layoutX="168.0" layoutY="271.0" promptText="type" />
+        <TextField fx:id="txtdeposit" layoutX="179.0" layoutY="332.0" promptText="deposit" />
+        <TextField fx:id="txtnom" layoutX="179.0" layoutY="24.0" promptText="nom" />
+        <Label layoutX="57.0" layoutY="83.0" text="date debut reservation" textFill="#e838e2" />
+        <Label layoutX="65.0" layoutY="177.0" text="date fin reservation" textFill="#e838e2" />
+        <Label layoutX="85.0" layoutY="275.0" text="type" textFill="#e838e2" />
+        <Label layoutX="98.0" layoutY="336.0" text="deposit" textFill="#e838e2" />
+        <ComboBox fx:id="cbEquipement" layoutX="167.0" layoutY="218.0" prefHeight="25.0" prefWidth="174.0" promptText="equipement" />
+        <Button layoutX="497.0" layoutY="440.0" mnemonicParsing="false" onAction="#deletereservation" style="-fx-background-color: #8a0e90;" text="supprimer" textFill="#fcfcfc" />
+
+
+        <Label layoutX="98.0" layoutY="28.0" text="nom" textFill="#e838e2" />
+      <Button layoutX="502.0" layoutY="389.0" mnemonicParsing="false" onAction="#updatereservation" style="-fx-background-color: #8a0e90;" text="modifier" textFill="WHITE" />
+      <Text fill="#b325d3" layoutX="434.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mise à jour reservation " textAlignment="CENTER" wrappingWidth="232.736328125">
+         <font>
+            <Font name="Berlin Sans FB" size="48.0" />
+         </font>
+      </Text>
+
+      <DatePicker fx:id="txtdatedebutres" layoutX="188.0" layoutY="79.0" />
+      <DatePicker fx:id="txtdatefinres" layoutX="188.0" layoutY="173.0" />
+      <ImageView fitHeight="95.0" fitWidth="103.0" layoutX="605.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@415514555_1125145151979689_4353203956994981018.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="66.0" layoutY="222.0" prefHeight="17.0" prefWidth="86.0" text="equipement" textFill="#e838e2" />
+    </children>
+
+</AnchorPane>

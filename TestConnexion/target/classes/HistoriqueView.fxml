@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HistoriqueViewController">
+    <TableView fx:id="historiqueTable" prefHeight="200.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="operationTypeColumn" prefWidth="100.0" text="Type" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="200.0" text="Description" />
+            <TableColumn fx:id="operationDateColumn" prefWidth="100.0" text="Date" />
+        </columns>
+    </TableView>
+</AnchorPane>

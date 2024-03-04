@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="659.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CommentaireEmailController">
+   <children>
+      <ImageView fitHeight="659.0" fitWidth="975.0">
+         <image>
+            <Image url="@428152047_3571321516418445_3841792622187971321_n.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="185.0" layoutY="208.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="185.0" layoutY="286.0" text="Commentaire" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font></Label>
+      <TextField fx:id="emailtxt" layoutX="314.0" layoutY="203.0" prefHeight="31.0" prefWidth="339.0" promptText="Votre Email" />
+      <TextField fx:id="commenttxt" layoutX="314.0" layoutY="276.0" prefHeight="116.0" prefWidth="557.0" promptText="Mettre Commentaire ici" />
+      <Button layoutX="314.0" layoutY="443.0" mnemonicParsing="false" onAction="#envoyerMail" style="-fx-background-color: white;" text="Envoyer">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font></Button>
+      <Label layoutX="371.0" layoutY="72.0" text="Envoyer un commentaire" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="errorLb" layoutX="314.0" layoutY="409.0" prefHeight="21.0" prefWidth="394.0" textFill="WHITE" />
+      <Button layoutX="185.0" layoutY="545.0" mnemonicParsing="false" onAction="#retour1" style="-fx-background-color: white;" text="Retour" />
+   </children>
+</AnchorPane>
