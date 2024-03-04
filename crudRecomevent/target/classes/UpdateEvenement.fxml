@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.DatePicker?>
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="638.0" styleClass="btn" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateEvenementController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="384.0">
+            <children>
+                <Text fill="#252ab9" strokeType="OUTSIDE" strokeWidth="0.0" text="Evenement details">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="46.0" prefWidth="444.0">
+            <children>
+                <Text fill="#6f63b0" strokeType="OUTSIDE" strokeWidth="0.0" text="nom d'evenement" textAlignment="CENTER" wrappingWidth="247.7367706298828">
+                    <font>
+                        <Font name="Arial" size="21.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Text>
+                <TextField fx:id="txtnomEvent" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="194.0" prefHeight="30.0" prefWidth="194.0">
+                    <font>
+                        <Font name="Century Gothic" size="20.0" />
+                    </font>
+                </TextField>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets top="5.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="59.0" prefWidth="444.0">
+            <children>
+                <Text fill="#6f63b0" strokeType="OUTSIDE" strokeWidth="0.0" text="lieu" textAlignment="CENTER" wrappingWidth="246.13673400878906">
+                    <font>
+                        <Font name="Century Gothic" size="21.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Text>
+                <TextField fx:id="txtlieu" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="161.0" prefHeight="30.0" prefWidth="192.0">
+                    <font>
+                        <Font name="Century Gothic" size="20.0" />
+                    </font>
+                </TextField>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="25.0" prefWidth="444.0">
+            <children>
+                <Text fill="#6f63b0" strokeType="OUTSIDE" strokeWidth="0.0" text="date evenement" textAlignment="CENTER" wrappingWidth="242.93672943115234">
+                    <font>
+                        <Font name="Century Gothic" size="21.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Text>
+                <DatePicker fx:id="txtdateEvent" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="181.0" prefHeight="30.0" prefWidth="194.0" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <HBox>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="89.0">
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text fill="#6f63b0" strokeType="OUTSIDE" strokeWidth="0.0" text="duree" textAlignment="CENTER" wrappingWidth="261.3367118835449">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <TextField fx:id="txtduree" />
+         </children>
+      </HBox>
+        <HBox layoutX="10.0" layoutY="114.0">
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <HBox>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text fill="#6f63b0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recompense" textAlignment="CENTER" wrappingWidth="251.33671188354492">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="cbRecompense" prefHeight="25.0" prefWidth="167.0" promptText="Recompense" />
+         </children>
+      </HBox>
+        <Button fx:id="update_button" onAction="#updateE" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #252ab9;" styleClass="btn" text="update" textFill="#32dbe7">
+            <font>
+                <Font name="Century Gothic" size="24.0" />
+            </font>
+        </Button>
+        <HBox alignment="CENTER" layoutX="18.0" layoutY="313.0" prefHeight="98.0" prefWidth="358.0">
+            <children>
+                <Button fx:id="Delete_button" alignment="BOTTOM_CENTER" onAction="#deleteE" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #252ab9;" styleClass="btn" text="Delete" textFill="#0bdae1">
+                    <font>
+                        <Font name="Century Gothic" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</VBox>

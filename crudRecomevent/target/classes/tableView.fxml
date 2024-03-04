@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="593.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListRecompenseController">
+    <children>
+        <AnchorPane prefHeight="477.0" prefWidth="1086.0">
+            <children>
+            <ImageView fitHeight="614.0" fitWidth="1097.0" layoutX="-1.0" layoutY="-3.0">
+               <image>
+                  <Image url="@bg.jpg" />
+               </image>
+            </ImageView>
+                <TableView fx:id="events_table" layoutX="14.0" layoutY="105.0" onMouseClicked="#getUpdateView" prefHeight="380.0" prefWidth="637.0" style="-fx-background-color: #42C2FF;">
+                    <columns>
+                        <TableColumn fx:id="id_col" minWidth="0.0" prefWidth="57.33332824707031" text="ID" />
+                        <TableColumn fx:id="equipeGagnante_col" prefWidth="137.60003662109375" text="equipeGagnante" />
+                        <TableColumn fx:id="montantRecompense_col" prefWidth="188.80006408691406" text="montantRecompense" />
+                        <TableColumn fx:id="dateRecompense_col" prefWidth="249.5999755859375" text="dateRecompense" />
+                    </columns>
+                </TableView>
+                <Text fill="#3327b9" layoutX="246.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Recompense" wrappingWidth="435.20347595214844">
+                    <font>
+                        <Font name="Arial Italic" size="35.0" />
+                    </font>
+                </Text>
+                <HBox layoutX="541.0" layoutY="24.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="24.0" />
+                    </children>
+                </HBox>
+                <Button fx:id="Add_btn" layoutX="702.0" layoutY="207.0" mnemonicParsing="false" onAction="#getAddView" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #3327b9;" text="Add" textFill="#7beadb" />
+                <Button fx:id="showEvents" layoutX="701.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#showEvents" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #3327b9;" text="Refresh" textFill="#9be1d3" />
+                <Button fx:id="print_btn" layoutX="697.0" layoutY="329.0" mnemonicParsing="false" onAction="#getpdf" onMouseClicked="#pdf" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #3327b9;" text="print" textFill="#73f7d2" />
+                <TextField fx:id="keywordTextFld" layoutX="726.0" layoutY="117.0" onAction="#searchbynom" prefHeight="27.0" prefWidth="186.0" style="-fx-border-color: #B7C3D7; -fx-border-radius: 1em;" />
+            <ImageView fitHeight="87.0" fitWidth="99.0" layoutX="813.0" layoutY="14.0">
+               <image>
+                  <Image url="@1000002060.png" />
+               </image>
+            </ImageView>
+
+            </children>
+            <stylesheets>
+
+            </stylesheets>
+        </AnchorPane>
+    </children>
+</HBox>
