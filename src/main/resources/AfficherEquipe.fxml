@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherEquipeControllers">
+   <children>
+      <TableView fx:id="tableView" layoutX="12.0" layoutY="42.0" prefHeight="329.0" prefWidth="584.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="69.0" text="id" />
+          <TableColumn fx:id="colidjeu" prefWidth="93.0" text="id_jeu" />
+            <TableColumn fx:id="colnom" prefWidth="134.0" text="nom" />
+            <TableColumn fx:id="colnbrjoueur" prefWidth="137.0" text="nbr joueur" />
+            <TableColumn fx:id="collistejoueur" prefWidth="150.0" text="liste joueur" />
+        </columns>
+      </TableView>
+      <Button layoutX="272.0" layoutY="371.0" mnemonicParsing="false" onAction="#retournerAInterfaceAjout" text="Retour" />
+      <TextField fx:id="txtRecherche" layoutX="399.0" layoutY="7.0" onAction="#recherche" />
+      <Button layoutX="223.0" layoutY="7.0" mnemonicParsing="false" onAction="#statistique1" text="statistique" />
+   </children>
+</AnchorPane>
